@@ -1,12 +1,10 @@
-function h = mycorr(x, y)
+function [h, lags] = mycorr(x, y)
   lenx = length(x)
   leny = length(y)
-  h = zeros(1, lenx + leny - 1)
+  h = zeros(1, lenx + leny)
   yy = zeros(1, leny)
   %calculating y(-n) from y(n)
-  for i=1:leny
-    yy(leny-i+1) = y(i)
-  endfor
+  yy = flip(y)
   %%
   
   %% correlation calculation
@@ -16,4 +14,6 @@ function h = mycorr(x, y)
     endfor
   endfor
   %%
+  % calculate lags
+  lags = -leny+1 : lenx
 end
