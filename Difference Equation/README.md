@@ -1,7 +1,7 @@
 ## Difference Equation
 Let a function `differenceEquation(yCofficient, xCofficient, input)` where,<br />
-`yCofficient` = Cofficient of 'y(n)`<br />
-`xCofficient` = Cofficient of 'x(n)`<br />
+`yCofficient` = Cofficient of `y(n)`<br />
+`xCofficient` = Cofficient of `x(n)`<br />
 and which return a sequence `output`.
 
 ## Algorithm
